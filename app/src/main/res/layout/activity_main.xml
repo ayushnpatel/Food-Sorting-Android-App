@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/main_gradient"
+        android:elevation="0dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:paddingRight="250dp"
+                android:src="@mipmap/burger"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/fries"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/drinks"
+                android:paddingLeft="250dp"
+                />
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="150dp"
+                android:src="@mipmap/logo" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/tablayout"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+
+        android:background="@color/bubblegumpink"
+        app:tabTextColor="@color/tabTextColor"
+        app:tabIndicatorColor="@color/tabTextColor"
+        android:theme="@style/tabStyle"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager">
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>
+

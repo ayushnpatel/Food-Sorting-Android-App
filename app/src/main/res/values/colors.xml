@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#5a8ec9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tabIndicatorColor">#12509C</color>
+    <color name="tabTextColor">#1562bc</color>
+    <color name="cardViewColor">#2d6bc7</color>
+    <color name="tabName">#a95603</color>
+    <color name="tabText">#e99846</color>
+    <color name="bubblegumpink">#FA87BE</color>
+    <color name="brightred">#FF2400</color>
+    <color name="cardborder">#0dc2ff</color>
+    <color name="cardtext">#237ee7</color>
+
+</resources>

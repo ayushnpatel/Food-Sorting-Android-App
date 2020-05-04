@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/cardview"
+        android:layout_width="375dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        card_view:strokeColor="@color/cardborder"
+        card_view:strokeWidth="10dp"
+        android:layout_centerInParent="true"
+        android:elevation="100dp"
+        app:cardBackgroundColor="@color/cardViewColor"
+        tools:style="@style/CardView"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="5dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/pink">
+
+
+            <TextView
+                android:id="@+id/Protein"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Carbs"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Protein: "
+                android:textColor="@color/cardtext"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toTopOf="@+id/Carbs"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toEndOf="@+id/productImage" />
+
+            <TextView
+                android:id="@+id/Carbs"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/Calories"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Carbs: "
+                android:textColor="@color/cardtext"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toTopOf="@+id/Fats"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toEndOf="@+id/productImage" />
+
+            <TextView
+                android:id="@+id/Fats"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/Protein"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Fats: "
+                android:textColor="@color/cardtext"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toEndOf="@+id/productImage" />
+
+            <TextView
+                android:id="@+id/Calories"
+                android:layout_width="150dp"
+                android:layout_height="18dp"
+                android:layout_below="@+id/productName"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/productImage"
+                android:text="Calories: "
+                android:textColor="@color/cardtext"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toTopOf="@+id/Protein"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toEndOf="@+id/productImage" />
+
+            <ImageView
+                android:id="@+id/productImage"
+
+                android:layout_width="145dp"
+                android:layout_height="137dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.111" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="134dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Protein"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/cardtext"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toTopOf="@+id/Calories"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.783"
+                card_view:layout_constraintStart_toEndOf="@+id/productImage"
+                card_view:layout_constraintTop_toTopOf="@+id/productImage"
+                card_view:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="54dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@mipmap/star"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/Fats"
+                card_view:layout_constraintVertical_bias="0.0" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+</RelativeLayout>
